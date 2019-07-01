@@ -20,8 +20,11 @@ public class Program {
 		//implementação do predicado
 		//list.removeIf(new ProductPredicate());
 		
-		//referência de método estático
-		list.removeIf(Product::staticProductPredicate);
+		//referência com método estático
+		//list.removeIf(Product::staticProductPredicate);
+		
+		//referencia com método não estático
+		list.removeIf(Product::nonStaticProductPredicate);
 		
 		for (Product p : list) {
 			System.out.println(p);
